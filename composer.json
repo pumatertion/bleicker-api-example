@@ -1,0 +1,32 @@
+{
+	"name"        : "bleicker/api-example",
+	"type"        : "typo3-cms-extension",
+	"description" : "API Base Package",
+	"version"     : "1.0.0",
+	"require"     : {
+		"typo3/cms"    : ">=7.6,<8.0",
+		"bleicker/typo3-request-handler": "~1.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit": "~4.7"
+	},
+	"autoload"    : {
+		"psr-4": {
+			"Bleicker\\ApiExample\\": "Classes"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Bleicker\\ApiExample\\Tests\\": "Tests"
+		}
+	},
+	"extra"       : {
+		"typo3/cms": {
+			"cms-package-dir": "{$vendor-dir}/typo3/cms",
+			"web-dir"        : ".Build/Web",
+			"Package"        : {
+				"partOfMinimalUsableSystem": true
+			}
+		}
+	}
+}
