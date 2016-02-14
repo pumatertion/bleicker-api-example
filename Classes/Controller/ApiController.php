@@ -2,6 +2,7 @@
 
 namespace Bleicker\ApiExample\Controller;
 
+use Bleicker\Application\ContextInterface;
 use Bleicker\Http\Controller\ControllerInterface;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
@@ -14,6 +15,24 @@ use TYPO3\CMS\Core\Http\Response;
  */
 class ApiController implements ControllerInterface
 {
+
+    /**
+     * @return ContextInterface
+     */
+    public static function getContext()
+    {
+        // TODO: Implement getContext() method.
+    }
+
+    /**
+     * @param ContextInterface $contextInterface
+     *
+     * @return void
+     */
+    public static function setContext(ContextInterface $contextInterface)
+    {
+        // TODO: Implement setContext() method.
+    }
 
     /**
      * @param RequestInterface $request
