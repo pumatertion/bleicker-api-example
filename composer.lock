@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4335d716c80eb28304a7dcf295bf681b",
-    "content-hash": "0562c4c672f9bcccd60280d4f7fed28f",
+    "hash": "5e0661b1f754769c147ca832cdc7f9c0",
+    "content-hash": "dde85f59ae2ba4ab3e278d270bff0292",
     "packages": [
         {
             "name": "bleicker/application",
