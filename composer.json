@@ -2,7 +2,7 @@
 	"name"        : "bleicker/api-example",
 	"type"        : "typo3-cms-extension",
 	"description" : "API Base Package",
-	"version"     : "1.0.0",
+	"version"     : "1.1.1",
 	"require"     : {
 		"typo3/cms"    : ">=7.6,<8.0",
 		"bleicker/typo3-request-handler": "~1.4"
