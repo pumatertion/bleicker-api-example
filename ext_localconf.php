@@ -19,7 +19,7 @@ $boot = function ($vendorName, $packageKey, array $configuration) {
     /**
      * Define pattern when the above registered RequestHandler should be invoked
      */
-    $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['bleicker']['typo3-request-handler']['uriPattern'] = '|^/api/.*|';
+    \Bleicker\RequestHandler\RequestHandler::$uriPattern = '|^/api/.*|';
 
     /**
      * Define Route for a given request method, a route pattern, and controller/method which the route should invoke
