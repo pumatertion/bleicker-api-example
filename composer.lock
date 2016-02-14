@@ -4,24 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "521c3a82b0ab3d02e8097ac18cdad906",
-    "content-hash": "1c42d7e2dfc57734ded4f2e525f98f45",
+    "hash": "272cf397dfbeecba0328b34cfa02479b",
+    "content-hash": "ebde9446552e06ebe893ccba6ba65b89",
     "packages": [
         {
-            "name": "bleicker/http",
-            "version": "1.2.1",
+            "name": "bleicker/application",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pumatertion/psr-http-requesthandler.git",
-                "reference": "717955b07abc0abe491edd1d5272d09244e5b815"
+                "url": "https://github.com/pumatertion/bleicker-application.git",
+                "reference": "a54356c3ff9781e0bd36ecdd130f1ecabfb6136c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pumatertion/psr-http-requesthandler/zipball/717955b07abc0abe491edd1d5272d09244e5b815",
-                "reference": "717955b07abc0abe491edd1d5272d09244e5b815",
+                "url": "https://api.github.com/repos/pumatertion/bleicker-application/zipball/a54356c3ff9781e0bd36ecdd130f1ecabfb6136c",
+                "reference": "a54356c3ff9781e0bd36ecdd130f1ecabfb6136c",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bleicker\\Application\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Application Package",
+            "time": "2016-02-14 11:02:05"
+        },
+        {
+            "name": "bleicker/http",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pumatertion/psr-http-requesthandler.git",
+                "reference": "9ee9c29ea41c8b0b3874033b2aa0c0b23c2fcd2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pumatertion/psr-http-requesthandler/zipball/9ee9c29ea41c8b0b3874033b2aa0c0b23c2fcd2d",
+                "reference": "9ee9c29ea41c8b0b3874033b2aa0c0b23c2fcd2d",
                 "shasum": ""
             },
             "require": {
+                "bleicker/application": "~1.0",
                 "nikic/fast-route": "~0.7",
                 "psr/http-message": "~1.0"
             },
@@ -37,24 +62,24 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Handle http requests by configured routes",
-            "time": "2016-02-12 12:27:16"
+            "time": "2016-02-14 11:49:14"
         },
         {
             "name": "bleicker/typo3-request-handler",
-            "version": "1.0.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pumatertion/typo3-psr-http-requesthandler.git",
-                "reference": "25e663daf45217ed5dd787efdfd0a47b9894f376"
+                "reference": "bd81dc9c4bc1ad73938d105669e6d9dbfa50b5ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pumatertion/typo3-psr-http-requesthandler/zipball/25e663daf45217ed5dd787efdfd0a47b9894f376",
-                "reference": "25e663daf45217ed5dd787efdfd0a47b9894f376",
+                "url": "https://api.github.com/repos/pumatertion/typo3-psr-http-requesthandler/zipball/bd81dc9c4bc1ad73938d105669e6d9dbfa50b5ad",
+                "reference": "bd81dc9c4bc1ad73938d105669e6d9dbfa50b5ad",
                 "shasum": ""
             },
             "require": {
-                "bleicker/http": "~1.2",
+                "bleicker/http": "~1.5",
                 "typo3/cms": ">=7.6,<8.0"
             },
             "require-dev": {
@@ -77,7 +102,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "TYPO3 Request-Handler",
-            "time": "2016-02-12 13:29:07"
+            "time": "2016-02-14 12:01:11"
         },
         {
             "name": "cogpowered/finediff",
