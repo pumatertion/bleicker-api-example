@@ -2,10 +2,6 @@
 
 namespace Bleicker\ApiExample\Controller;
 
-use Bleicker\Application\ContextInterface;
-use Bleicker\Http\Controller\ControllerInterface;
-use Psr\Http\Message\RequestInterface;
-use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Core\Http\Response;
 
 /**
@@ -13,41 +9,10 @@ use TYPO3\CMS\Core\Http\Response;
  *
  * @package Bleicker\ApiExample\Controller
  */
-class ApiController implements ControllerInterface
+class ApiController extends AbstractController
 {
 
     /**
-     * @return ContextInterface
-     */
-    public static function getContext()
-    {
-        // TODO: Implement getContext() method.
-    }
-
-    /**
-     * @param ContextInterface $contextInterface
-     *
-     * @return void
-     */
-    public static function setContext(ContextInterface $contextInterface)
-    {
-        // TODO: Implement setContext() method.
-    }
-
-    /**
-     * @param RequestInterface $request
-     * @param                   $methodName
-     * @param array $methodArguments
-     *
-     * @return ResponseInterface
-     */
-    public function processRequest($methodName, $methodArguments, RequestInterface $request)
-    {
-        return call_user_func_array(array($this, $methodName), $methodArguments);
-    }
-
-    /**
-     *
      * @param string $what
      * @param string $should
      * @param string $i
